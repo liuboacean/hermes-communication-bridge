@@ -1,7 +1,7 @@
 ---
 name: hermes-comm
 description: "WorkBuddy 与 Hermes 之间通过共享文件队列直接通信。触发词：发消息给hermes、收hermes消息、查看通信队列、双向通信"
-version: 1.0.0
+version: 1.1.0
 category: autonomous-ai-agents
 ---
 
@@ -63,3 +63,13 @@ python3 ~/.workbuddy/skills/hermes-communication-bridge/scripts/communication_qu
 3. **Hermes 回复**：写 `hermes → workbuddy` 的 pending 消息
 4. **WorkBuddy 读取**：`receive workbuddy`，处理消息
 5. **标记完成**：`mark <msg_id> completed`
+
+## 版本历史
+
+### v1.1.0（2026-04-16）
+- **Bug Fix**：修复消息 ID 秒级时间戳碰撞问题，改用 `time.time_ns()` 生成纳秒级唯一 ID，避免同一秒内多条消息 ID 重复
+- **Hermes 侧安装说明**：`process_queue.py` 和 `communication_queue.py` 需同时安装到 Hermes skill 目录（`~/.hermes/skills/autonomous-ai-agents/hermes-communication-bridge/`），Bridge cron 才能正常工作
+- **验证通过**：双向通信延迟约 1 分钟，队列幂等处理正常
+
+### v1.0.0（2026-04-16）
+- 初始版本发布

@@ -64,7 +64,7 @@ class CommunicationQueue:
         Returns:
             消息ID
         """
-        msg_id = f"msg_{int(time.time())}_{sender[:3]}"
+        msg_id = f"msg_{int(time.time_ns())}_{sender[:3]}"
         
         message = {
             "id": msg_id,
