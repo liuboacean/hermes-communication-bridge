@@ -1,6 +1,6 @@
 ---
 name: hermes-comm
-description: "WorkBuddy 与 Hermes 之间通过共享文件队列直接通信。触发词：发消息给hermes、收hermes消息、查看通信队列、双向通信、队列消息、异步通信
+description: "WorkBuddy 与 Hermes 之间通过共享文件队列直接通信。触发词：发消息给hermes、收hermes消息、查看通信队列、双向通信、队列消息、异步通信"
 version: 1.2.0
 category: autonomous-ai-agents
 ---
