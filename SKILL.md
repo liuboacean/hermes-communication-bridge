@@ -1,11 +1,13 @@
 ---
 name: hermes-comm
-description: "WorkBuddy 与 Hermes 之间通过共享文件队列直接通信。触发词：发消息给hermes、收hermes消息、查看通信队列、双向通信"
-version: 1.1.0
+description: "WorkBuddy 与 Hermes 之间通过共享文件队列直接通信。触发词：发消息给hermes、收hermes消息、查看通信队列、双向通信、队列消息、异步通信
+version: 1.2.0
 category: autonomous-ai-agents
 ---
 
 # Hermes-WorkBuddy 通信桥
+
+> **v1.x 注意**：此为队列式通信桥（queue.json）。如需更强大的**事件驱动闭环命令系统**，请改用 `hermes-memory-bridge` v2.0（`~/.workbuddy/skills/hermes-memory-bridge/`）。两者可并存，各司其职。
 
 通过 `~/.hermes/shared/communication/queue.json` 共享文件队列，WorkBuddy 与 Hermes 直接双向通信。
 
