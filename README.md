@@ -1,5 +1,10 @@
 # Hermes-WorkBuddy 通信桥
 
+[![GitHub stars](https://img.shields.io/github/stars/liuboacean/hermes-communication-bridge?style=social)](https://github.com/liuboacean/hermes-communication-bridge/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/liuboacean/hermes-communication-bridge?style=social)](https://github.com/liuboacean/hermes-communication-bridge/network/members)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 > 通过共享文件队列（`queue.json`）实现 WorkBuddy 与 Hermes Agent 的双向直接通信，无需外部服务依赖。
 
 ## 架构
